@@ -107,7 +107,6 @@ def adicionar_usuario(lista_usuarios):
         print("Usuário criado com sucesso!")
 
 def adicionar_conta(nconta_atual, lista_usuarios, lista_contas):
-    """Cria uma nova conta vinculada a um usuário existente."""
     cpf_usuario=""
     while len(cpf_usuario) != 11 or not cpf_usuario.isdigit():
         cpf_usuario = input("Informe seu CPF (apenas números): ").strip()
@@ -132,7 +131,6 @@ def adicionar_conta(nconta_atual, lista_usuarios, lista_contas):
 
 
 def listar_usuarios(lista_usuarios):
-    """Exibe uma lista de todos os usuários cadastrados."""
     print("\n================ USUÁRIOS ================")
     if not lista_usuarios:
         print("Nenhum usuário cadastrado.")
@@ -145,7 +143,6 @@ def listar_usuarios(lista_usuarios):
     print("==========================================")
     
 def listar_contas(lista_contas):
-    """Exibe uma lista de todas as contas cadastradas."""
     print("\n================= CONTAS =================")
     if not lista_contas:
         print("Nenhuma conta cadastrada.")
@@ -237,4 +234,5 @@ while True:
         break
 
     else:
+
         print("Operação inválida, por favor selecione novamente a operação desejada.")
